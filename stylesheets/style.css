@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto:wght@500&display=swap');
+
+
+html {
+    font-family: 'Noto Sans TC', 'Roboto', sans-serif;
+    line-height: 1.5;
+    --primary-color: #186A3B;
+    --secondary-color: #AAA;
+}
+
+
+
+/* 主色 */
+.primary {
+    color: var(--primary-color);
+}
+
+.secondary {
+    color: var(--secondary-color);
+}
+
+.title {
+    font-size: 24px;
+}
+
+.background {
+    background-color: #DDD;
+    padding: 50px 0;
+}
+
+/* 定寬容器 */
+.container {
+    padding: 10px 50px;
+    background-color: #FFF;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+/* 彈性容器 */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.intro-block .row {
+    align-items: center;
+}
+
+.avatar {
+    width: 20%;
+}
+
+.avatar img {
+    width: 90%;
+    border-radius: 50%;
+}
+
+.intro-block .content {
+    width: 80%;
+}
+
+.contact-me ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-me>ul li {
+    display: inline;
+    padding: 0 5px;
+}
+
+.contact-me a {
+    text-decoration: none;
+}
+
+.education-item {
+    display: flex;
+    align-items: center;
+    width: 33.33333%;
+}
+
+.education-item .logo {
+    width: 20%;
+}
+
+.education-item .logo img {
+    width: 100%;
+}
+
+.education-item ul li {
+    list-style: none;
+    padding: 5px 0;
+}
+
+.education-item ul :nth-child(1) {
+    color: #AAA;
+}
+
+.education-item ul :nth-child(2) {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.education-item ul :nth-child(3) {
+    color: #186A3B;
+}
+
+.others-block {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.others-block>* {
+    box-sizing: border-box;
+}
+
+.others-block h3 {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #AAA;
+}
+
+.skill {
+    width: 50%;
+    padding-right: 5px;
+}
+
+.language {
+    width: 50%;
+    padding-left: 5px;
+}
+
+@media screen and (max-width: 992px) {
+
+    .avatar, 
+    .avatar > img{
+        width: 100%;
+    }
+
+    .intro-block .content{
+        width: 100%;
+    }
+
+    .intro-block > .row {
+        flex-direction: column;
+    }
+    .avatar {
+        max-width: 150px;
+    }
+
+
+    .education-item {
+        width: 50%;
+    }
+
+    .others-block>* {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    .education-item {
+        width: 100%;
+    }
+}
